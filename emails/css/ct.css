@@ -1,0 +1,133 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  color: #1e1e1e;
+}
+
+.email-container {
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+}
+
+.header {
+  text-align: center;
+  position: relative;
+  height: 150px;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.header img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Asegura que la imagen se ajuste sin deformarse */
+}
+
+.logo {
+  max-width: 150px;
+  position: relative;
+  z-index: 1;
+  margin-top: 40px;
+}
+
+h1 {
+  color: #1e1e1e;
+  font-size: 24px;
+}
+
+p {
+  color: #404ed0;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+a {
+  color: #fff; /* Inicialmente blanco para el texto del botón */
+  text-decoration: none;
+  transition: background 0.3s ease, transform 0.2s ease, color 0.3s ease;
+  background: linear-gradient(45deg, #d547b1, #404ed0);
+  padding: 12px 20px;
+  border-radius: 5px;
+  display: inline-block;
+  margin-top: 20px;
+}
+
+a:hover {
+  background: linear-gradient(45deg, #c336a0, #3b3ecf);
+  transform: scale(1.05);
+  color: #f4f4f4;
+}
+
+a:focus {
+  outline: 3px solid #fff;
+  outline-offset: 2px;
+}
+
+a:active {
+  transform: scale(.98);
+  background: linear-gradient(45deg, #a92689, #2f2fb0);
+}
+
+.footer {
+  font-size: 12px;
+  color: #aaa;
+  margin-top: 20px;
+}
+
+.content-text {
+  color: #1e1e1e;
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #121212;
+    color: #e0e0e0;
+  }
+
+  .email-container {
+    background-color: #1e1e1e;
+    box-shadow: 0 0 10px rgba(255, 255, 255, .1);
+  }
+
+  h1 {
+    color: #fff;
+  }
+
+  p {
+    color: #a5b4fc;
+  }
+
+  a {
+    color: #fff; /* Asegura que el texto sea blanco en modo oscuro */
+  }
+
+  a:hover {
+    color: #7fa6f9;
+  }
+
+  .cta-button {
+    background: linear-gradient(45deg, #bb6bd9, #6b9dfc);
+    color: #121212;
+  }
+
+  .cta-button:hover {
+    color: #fff;
+  }
+
+  .footer {
+    color: #666;
+  }
+
+  .content-text {
+    color: #e0e0e0;
+  }
+}
